@@ -1,0 +1,33 @@
+.to-up {
+  background-color: #4f2ee8;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.arrow-to-up {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
+
+.btn-ring {
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  cursor: pointer;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(79, 46, 232, 0.3);
+}
+
+.btn-ring-hidden {
+  display: none;
+}

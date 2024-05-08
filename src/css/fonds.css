@@ -1,0 +1,129 @@
+.supporters {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 40px 20px;
+  width: 335px;
+  max-height: 460px;
+  border-radius: 16px;
+  background: radial-gradient(183.6% 183.01% at 59.76% -23.42%, #4f2ee8 18.03%, #ffffff 100%);
+}
+
+.supporters__title {
+  cursor: pointer;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.supporters__heading {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.04em;
+
+  color: #ffffff;
+}
+
+.supporters__icon {
+  width: 20px;
+  height: 32px;
+}
+
+.supporters__item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.supporters__number {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+
+  margin-right: 16px;
+}
+
+.supporters__img {
+  filter: brightness(0) invert(1);
+  display: inline-block;
+  vertical-align: middle;
+  height: 32px;
+}
+
+.supporters__btn {
+  cursor: pointer;
+  margin: 0px auto;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  min-height: 32px;
+  border: none;
+  border-radius: 50px;
+  background-color: #ffffff;
+  transform: rotateX(0);
+  transition: transform 0.5s ease-in-out;
+
+  & span {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+  }
+}
+
+.supporters__btn--up {
+  transform: rotateX(180deg);
+}
+
+.supporters__btn.hidden {
+  display: none;
+}
+
+.supporters__btn-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.swiper {
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+	.swiper-slide {
+		height: auto !important;
+	}
+
+  .supporters {
+    max-height: 472px;
+  }
+
+  .swiper {
+    margin-bottom: 24px;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+  }
+
+  .supporters__btn {
+    width: 38px;
+    min-height: 38px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .supporters {
+    width: 356px;
+    max-height: 490px;
+    padding-bottom: 24px;
+  }
+
+  .supporters__btn {
+    width: 38px;
+    min-height: 38px;
+  }
+}

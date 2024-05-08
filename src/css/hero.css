@@ -1,0 +1,230 @@
+.hero-list-wrapper {
+  position: relative;
+}
+.hero-list-wrapper:not(:last-child) {
+  margin-bottom: 94px;
+}
+.hero-card-image {
+  width: 335px;
+  height: 485px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+}
+.hero-title {
+  color: #111;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: -0.04em;
+  margin-bottom: 40px;
+}
+.hero-accent {
+  color: #4f2ee8;
+}
+.hero-card-title {
+  color: #b4afaf;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.book-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.book-author {
+  color: #b4afaf;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.04em;
+  font-style: italic;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+.card-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111111;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  box-sizing: border-box;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  border: 2px solid rgb(79, 46, 232);
+  border-radius: 40px;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+}
+
+/*========================*/
+.hidden-text {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  background-color: #eac645;
+  border-radius: 0 0 8px 8px;
+  text-align: center;
+  top: 414px;
+  transform: translateY(124%);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 18px;
+  color: #111111;
+  transition: transform 250ms ease-in-out;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-image-cont {
+  position: relative;
+  overflow: hidden;
+}
+.card-image-cont:hover .hidden-text {
+  transform: translateY(2%);
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    padding: 50px 0 100px;
+  }
+  .hero-list-wrapper:not(:last-child) {
+    margin-bottom: 106px;
+  }
+  .hero-list-card {
+    min-height: 366px;
+  }
+  .hero-title {
+    font-size: 48px;
+    line-height: 52px;
+  }
+  .hero-card-title {
+    line-height: 24px;
+  }
+  .hero-card-image {
+    width: 218px;
+    height: 316px;
+  }
+  .hero-card-list {
+    display: flex;
+    width: 704px;
+    gap: 25px;
+  }
+  .book-author {
+    margin-bottom: 20px;
+  }
+  .book-title {
+    width: 218px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .card-image-cont:hover .hidden-text {
+    transform: translateY(-232%);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero-list-wrapper {
+    min-width: 996px;
+  }
+  .hero-list-card {
+    min-height: 306px;
+  }
+  .hero-card-image {
+    max-width: 180px;
+    height: 256px;
+  }
+  .hero-card-list {
+    min-width: 996px;
+    gap: 24px;
+  }
+  .hero-list {
+    min-width: 996px;
+  }
+  .book-title {
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .book-author {
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .card-image-cont:hover .hidden-text {
+    transform: translateY(-325%);
+  }
+}
+
+.dark-hero {
+	color: #FFFFFF;
+}
+
+.category-card:not(:last-child) {
+	margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+	.category-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 25px;
+		row-gap: 40px;
+	}
+
+	.book-title {
+		width: 218px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.category-card:not(:last-child) {
+		margin-bottom: 0;
+	}
+
+	.book-author {
+		width: 218px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.category-list {
+		gap: 24px;
+		row-gap: 40px;
+	}
+
+	.book-title {
+		width: 180px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.book-author {
+		width: 180px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}

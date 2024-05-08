@@ -1,0 +1,17 @@
+/* Base */
+@import url(./base.css);
+/* Header */
+@import url(./header.css);
+/* Side Bar */
+@import url(./side-bar.css);
+/* Fonds */
+@import url(./fonds.css);
+/* Hero */
+@import url(./hero.css);
+/* Shopping List */
+@import url(./shopping-list.css);
+/* Modal */
+@import url(./modal.css);
+/* Footer */
+/* @import url(); */
+@import url(./ToUpBtn.css);

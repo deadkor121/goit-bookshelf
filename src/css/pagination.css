@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+.sl-item.hidden {
+	display: none;
+}
+
+.str-box {
+	display: flex;
+	justify-content: center;
+}
+
+.pagination-number,
+.pagination-button{
+  margin: 0.25rem 0.25rem;
+  cursor: pointer;
+  border-radius:50%;
+	width: 44px;
+	height: 44px;
+	text-align: center;
+}
+
+.pagination-number:hover,
+.pagination-button:not(.disabled):hover {
+  background: #fff;
+}
+
+.pagination-number.active {
+  color: #fff;
+  background: black;
+}
+
+#prev-button{
+	color:white;
+  background: rgba(17, 17, 17, 1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#next-button{
+	color:black;
+	background: rgba(234, 198, 69, 1);
+}
+/* For phones */
+@media only screen and (max-width: 600px) {
+    /* Add your styles for phones here */
+  }
+  
+  /* For tablets */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Add your styles for tablets here */
+  }
+  
+  /* For computers */
+  @media only screen and (min-width: 1025px) {
+    /* Add your styles for computers here  */
+  }
